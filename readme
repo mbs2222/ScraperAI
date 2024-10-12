@@ -1,55 +1,49 @@
-# AI Web Scraper
+🕸️ AI Web Scraper
+This project is an AI-powered web scraper that enables users to extract and parse specific information from websites using natural language instructions.
 
-This project is an AI-powered web scraper that allows users to extract and parse specific information from websites using natural language instructions.
+✨ Features
+Web Scraping: Extracts content from any given URL.
+Text Cleaning: Removes unnecessary HTML elements and formats the extracted content.
+AI-Powered Parsing: Utilizes the Ollama language model to interpret user instructions and extract relevant information.
+User-Friendly Interface: Built with Streamlit for easy interaction.
 
-## Features
+🛠️ How It Works
+Input: The user enters a URL to scrape.
+Scraping: The application scrapes the website and cleans the extracted text.
+Instruction: The user provides a description of the information they want to extract.
+Parsing: The AI model parses the content based on the user's instructions and returns the relevant information.
 
-1. Web Scraping: Extracts content from any given URL.
-2. Text Cleaning: Removes unnecessary HTML elements and formats the extracted content.
-3. AI-Powered Parsing: Uses the Ollama language model to interpret user instructions and extract relevant information.
-4. User-Friendly Interface: Built with Streamlit for easy interaction.
+⚙️ Requirements
+Python 3.7+
+Libraries:
+Streamlit
+Langchain
+Langchain Ollama
+Selenium
+BeautifulSoup4
+ChromeDriver: Ensure ChromeDriver is installed and accessible for Selenium.
 
-## How It Works
+🚀 Installation
+Clone this repository:
+git clone https://github.com/mbs2222/AI-Web-Scraper.git
+cd AI-Web-Scraper
+Install the required packages:
+pip install -r requirements.txt
+Ensure ChromeDriver is installed and its path is correctly set in scrape.py.
 
-1. The user enters a URL to scrape.
-2. The application scrapes the website and cleans the extracted text.
-3. The user provides a description of the information they want to extract.
-4. The AI model parses the content based on the user's instructions and returns the relevant information.
+🖥️ Usage
+Run the Streamlit app:
+streamlit run main.py
+Scrape a Site:
+Enter a URL and click "Scrape Site".
+Parse Content:
+Enter a description of the desired content and click "Parse Content".
 
-## Requirements
+📁 Project Files
+main.py: The main Streamlit application.
+scrape.py: Functions for web scraping and text cleaning.
+parse.py: Manages AI-powered parsing using Ollama.
 
-- Python 3.7+
-- Streamlit
-- Langchain
-- Langchain Ollama
-- Selenium
-- BeautifulSoup4
-- ChromeDriver
+📝 Note
+This project uses the Ollama language model. Make sure it is properly set up and running on your system.
 
-## Installation
-
-1. Clone this repository.
-2. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Ensure ChromeDriver is installed and its path is correctly set in `scrape.py`.
-
-## Usage
-
-1. Run the Streamlit app:
-   ```
-   streamlit run main.py
-   ```
-2. Enter a URL and click "Scrape Site".
-3. Once the content is scraped, enter a description of what you want to parse and click "Parse Content".
-
-## Files
-
-- `main.py`: The main Streamlit application.
-- `scrape.py`: Contains functions for web scraping and text cleaning.
-- `parse.py`: Handles the AI-powered parsing using Ollama.
-
-## Note
-
-This project uses the Ollama language model. Ensure you have it properly set up and running on your system.
